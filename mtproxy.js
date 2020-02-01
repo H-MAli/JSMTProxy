@@ -246,4 +246,4 @@ net.createServer(function(socket) {
 		}
 	});
 
-}).listen(configObj.port);
+}).listen(configObj.port, configObj.forceIpFour ? '0.0.0.0' : null);
